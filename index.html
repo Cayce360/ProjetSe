@@ -1,0 +1,105 @@
+<!-- Formulaire.htm --> 
+<HTML> 
+    <HEAD> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <TITLE>Un Formulaire</TITLE> 
+    </HEAD> 
+    <BODY> 
+        <form name="formulaire bootstrap " method="post" action="" style="border: 2px solid blue; width: 95%; padding: 2% ;" > 
+            <h1> <font color = "blue" > Formulaire </font> </h1>
+         
+            <table>
+                <TR> 
+                        <TD WIDTH="20%"><B>Civilité</B> 
+                        <TD WIDTH="70%"> 
+                           <INPUT TYPE=RADIO NAME=civilite 
+                            VALUE="Madame">Madame 
+                            <INPUT TYPE=RADIO NAME=civilite VALUE="Monsieur" 
+                            CHECKED>Monsieur 
+                <TR> 
+                        <TD><B>Nom / Prénom</B></TD> 
+                        <TD> <INPUT TYPE=TEXT NAME=nom SIZE=50 MAXLENGTH=80></TD> 
+                <TR> 
+                        <TD><B>Adresse</B></TD> 
+                        <TD><TEXTAREA NAME=adresse COLS=50 ROWS=2 >Rue No Boîte 
+                          </TEXTAREA></TD> 
+                <TR> 
+                        <TD><B>No postal / Localité</B></TD> 
+                        <TD><INPUT TYPE=TEXT NAME=no_postal Size=5 MAXLENGTH=4> 
+                            <INPUT TYPE=TEXT NAME=localite SIZE=20 MAXLENGTH=80
+                            VALUE="Tunis"> 
+                        </TD> 
+                <TR> 
+                        <TD><B>Pays</B> </TD> 
+                        <TD> <SELECT NAME=pays> 
+                                    <OPTION>Maroc 
+                                    <OPTION>Algérie
+                                    <OPTION SELECTED>Tunisie 
+                            </SELECT>
+                        </TD>     
+                <TR> 
+                        <TD><B>Plateforme(s)</B></TD> 
+                        <TD><INPUT TYPE=CHECKBOX NAME=materiel VALUE="Windows" 
+                        CHECKED>Windows 
+                        <INPUT TYPE=CHECKBOX NAME=materiel VALUE="Mac" 
+                        CHECKED>Macintosh 
+                        <INPUT TYPE=CHECKBOX NAME=materiel VALUE="Uni">Unix 
+                        </TD> 
+                <TR> 
+                        <TD><B>Applications(s)</B> 
+                        <TD><SELECT NAME=applications SIZE=5 MULTIPLE> 
+                            <OPTION SELECTED>Bureautique 
+                            <OPTION>Programmation 
+                            <OPTION>Statistiques 
+                            <OPTION>SGBD 
+                            <OPTION SELECTED>Developpement mobile
+                            </SELECT> 
+                        </TD> 
+                </TR>
+                <br>
+                
+                <tr>
+                        <td><b>Email:</b></td>
+                        <td><input type="email" class="form-control" id="inputEmail3" placeholder="Veuillez taper votre adresse électronique"></td>
+                </tr>
+                <TR> 
+                        <TD WIDTH="20%"><B>Niveau</B> 
+                        <TD WIDTH="70%"> 
+                           <INPUT TYPE=RADIO NAME=niveau 
+                            VALUE="Licence">Licence
+                            <INPUT TYPE=RADIO NAME=niveau VALUE="Master" 
+                            CHECKED>Master
+                <TR>
+        </table>
+             <BR> 
+                <label for=""><b>Veuillez Entrer votre groupe  </b> </label>
+              <div class="form-check">
+                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                   <label class="form-check-label" for="flexRadioDefault1">
+                      groupe 1
+                   </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  groupe 2 
+                </label>
+              </div>
+              <br>
+              <div class="col-sm-10">
+                <label for="number"><b>N° Etudiant </b></label>
+                <input type="number" class="form-control" placeholder="numéro carte étudiant ">
+              </div>
+              
+
+             <br>   
+                <INPUT TYPE=SUBMIT VALUE=" Soumettre formulaire "> <INPUT 
+                TYPE=RESET VALUE=" Effacer ">
+
+        
+        </form>> 
+    </BODY> 
+    </HTML> 
